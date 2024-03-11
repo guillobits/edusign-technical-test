@@ -10,7 +10,9 @@ app.use(express.urlencoded({ extended: true }));
 
 app.disable('x-powered-by');
 
-app.get('/', (req, res) => {});
+app.get('/', (req, res) => {
+	res.send("hello world");
+});
 
 const port = 3000;
 
